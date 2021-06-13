@@ -1,5 +1,4 @@
 # Compiled JavaScript files
-**/*.js
 **/*.js.map
 
 # Except the ESLint config file
@@ -7,6 +6,8 @@
 
 # TypeScript v1 declaration files
 typings/
+
+lib/
 
 # Node.js dependency directory
 node_modules/
