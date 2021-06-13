@@ -8,8 +8,8 @@ export const scriptGetRoute = router.get(
   "/script/:id",
   async (req, res, next) => {
     const id = req.params.id !== "1" ? req.params.id : null
-    const domain = "aero-apps-sandbox.myshopify.com"
-    const token = "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"
+    const domain = ""
+    const token = ""
 
     const shopify = getNewShopifyClientWithToken(domain, token)
     id ? await shopify.scriptTag.delete(parseInt(id)) : ""
