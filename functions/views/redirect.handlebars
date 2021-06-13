@@ -1,0 +1,15 @@
+<script type="text/javascript">
+
+var forceParentRedirect = {{#if forceParentRedirect}}true;{{/if}}{{#unless forceParentRedirect}}false;{{/unless}}
+    ShopifyApp.ready(function () {
+        ShopifyApp.remoteRedirect("{{{ redirectUrl }}}");
+    });
+
+                console.log('redirecting old school way - forceParent: ' + forceParentRedirect);
+                if(forceParentRedirect && window.top) {
+                    window.top.location = '{{{ redirectUrl }}}';
+                }else {
+                    window.location = '{{{ redirectUrl }}}';
+                }
+
+</script>

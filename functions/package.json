@@ -1,0 +1,47 @@
+{
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint \"src/**/*\"",
+    "build": "tsc",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "12"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^1.8.0",
+    "@google-cloud/logging-winston": "^4.0.5",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "firebase": "^8.6.7",
+    "firebase-admin": "^9.2.0",
+    "firebase-functions": "^3.11.0",
+    "fireorm": "^0.22.0",
+    "nodemon": "^2.0.7",
+    "reflect-metadata": "^0.1.13",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.9",
+    "shopify-api-node": "^3.6.12",
+    "useragent": "^2.3.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.2",
+    "@types/express-handlebars": "^5.3.0",
+    "@types/request-promise-native": "^1.0.17",
+    "@types/useragent": "^2.3.0",
+    "@typescript-eslint/eslint-plugin": "^3.9.1",
+    "@typescript-eslint/parser": "^3.8.0",
+    "eslint": "^7.6.0",
+    "eslint-plugin-import": "^2.22.0",
+    "firebase-functions-test": "^0.2.0",
+    "typescript": "^3.8.0"
+  },
+  "private": true
+}

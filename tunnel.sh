@@ -1,0 +1,1 @@
+ngrok http -subdomain=suggestr-shopify 8080

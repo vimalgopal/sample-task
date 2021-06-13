@@ -1,0 +1,80 @@
+.grayscaleblur {
+  filter: blur(3px) grayscale(100%);
+}
+
+[v-cloak] { display: none }
+
+.polaris-caption--warning {
+    color: #8A6116;
+}
+.polaris-caption--success {
+    color: #3f922f;
+}
+
+.polaris-icon__svg {
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    margin: auto;
+    margin-left: -0.4rem;
+    margin-right: 0.4rem;
+}
+
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.separator--margin {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.separator::before, .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px inset;
+}
+.separator::before {
+    margin-right: .25em;
+}
+.separator::after {
+    margin-left: .25em;
+}
+/*
+Working margins - as the m-1 m-x aren't working by default
+ */
+.wm-1 {
+    margin: 4px !important;
+}
+.wm-2 {
+    margin: 8px !important;
+}
+.wm-3 {
+    margin: 16px !important;
+}
+
+.wm-left-1 {
+    margin-left: 4px !important;
+    margin-top: 4px !important;
+}
+.wm-left-2 {
+    margin-left: 8px !important;
+    margin-top: 4px !important;
+}
+.wm-right-1 {
+    margin-right: 4px !important;
+    margin-top: 4px !important;
+}
+.wm-right-2 {
+    margin-right: 8px !important;
+    margin-top: 4px !important;
+}
+/*
+A bit like w-100 but with minimum width
+ */
+mw-100 {
+    min-width: 100%;
+
+}
